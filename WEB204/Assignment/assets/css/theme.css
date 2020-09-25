@@ -4695,12 +4695,12 @@ section {
 }
 
 .table-data3 thead tr th:last-child {
-    text-align: right;
+    /* text-align: right; */
     padding-right: 50px;
 }
 
 .table-data3 tbody tr td:last-child {
-    text-align: right;
+    /* text-align: right; */
     padding-right: 50px;
 }
 
@@ -14650,7 +14650,7 @@ section {
     padding-left: 30px;
 }
 
-
+input[type="date"],
 input[type="datetime-local"]{
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;

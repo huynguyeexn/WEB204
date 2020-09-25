@@ -31,7 +31,7 @@
                         <div class="table-data__tool-left">
                             <a href="admin.php?ctrl=order&act=add"
                                 class="au-btn au-btn-icon au-btn--green au-btn--small">
-                                <i class="zmdi zmdi-plus"></i>add item
+                                <i class="zmdi zmdi-plus"></i>add order
                             </a>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                     <div class="table-data__tool">
                         <div class="table-data__tool-left">
                             <a href="admin.php?ctrl=tag&act=add" class="au-btn au-btn-icon au-btn--green au-btn--small">
-                                <i class="zmdi zmdi-plus"></i>add item
+                                <i class="zmdi zmdi-plus"></i>add order
                             </a>
                         </div>
                     </div>

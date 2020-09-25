@@ -9,12 +9,12 @@ function getUserById($id){
     $sql = "select * from users where id=$id";
     return queryOne($sql);
 }
-function addNewUser($username, $password, $email, $phone, $created, $birthday){
-    $sql = "insert into users(username, password, email, phone, created, birthday) values('$username', '$password', '$email', '$phone', '$created', '$birthday')";
+function addNewUser($username, $password,$fullname, $email, $phone, $created, $birthday){
+    $sql = "insert into users(username, password,fullname, email, phone, created, birthday) values('$username', '$password', '$fullname', '$email', '$phone', '$created', '$birthday')";
     return execute($sql);
 }
-function updateUser($id, $username, $password, $email, $phone, $created, $birthday){
-    $sql = "update users set username = $username, password = $password, email = $email, phone = $phone, created = $created, birthday = $birthday where id = '$id'";
+function updateUser($id, $username, $password,$fullname, $email, $phone, $birthday){
+    $sql = "update users set username = '$username', password = '$password',fullname = '$fullname', email = '$email', phone = '$phone', birthday = '$birthday' where id = $id";
     return execute($sql);
 }
 function deleteUser($id){
