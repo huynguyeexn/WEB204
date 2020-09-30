@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 include_once "models/tag.php";
 $act = "index";
 $message = "";
@@ -20,12 +22,17 @@ switch($act){
     break;
 
     case "insert":
-        $name = $_POST["tagName"];
-        addNewTag($name);
-        $message = "Success";
-        include_once "views/admin/admin-header.php";
-        include_once "views/admin/tag/tag.php";
-        include_once "views/admin/admin-footer.php";
+        try{
+            $name = $_POST["name"];
+            addNewTag($name);
+            $_SESSION['message'] = Array(1,"Success: Your task has successfully been completed.");
+        }
+        catch(PDOException $Exception) {
+            echo 'Failed: ' . $Exception->getMessage();
+            exit;
+        }
+        header("location: admin.php?ctrl=".$ctrl."&act=add");
+        exit();
     break;
 
     case "edit":
@@ -39,12 +46,35 @@ switch($act){
     break;
 
     case "update":
-        $name = $_POST["tagName"];
-        $id = $_POST["tagID"];
-        updateTag($id, $name);
-        $message = "Success";
-        include_once "views/admin/admin-header.php";
-        include_once "views/admin/tag/tag.php";
-        include_once "views/admin/admin-footer.php";
+        try{
+            $name = $_POST["name"];
+            $id = $_POST["id"];
+            updateTag($id, $name);
+            $_SESSION['message'] = Array(1,"Success: Your task has successfully been completed.");
+        }
+        catch(PDOException $Exception) {
+            echo 'Failed: ' . $Exception->getMessage();
+            exit;
+        }
+        header("location: admin.php?ctrl=".$ctrl);
+        exit();
+    break;
+
+    case "delete":
+        if(isset($_GET['id'])){
+            $id = $_GET['id'];
+            try{
+                deleteTag($id);
+            }
+            catch(PDOException $Exception) {
+                echo 'Failed: ' . $Exception->getMessage();
+                exit;
+            }
+            $_SESSION['message'] = Array(1,"Success: Your task has successfully been completed.");
+            header("location: admin.php?ctrl=".$ctrl);
+            exit();
+        }
+        header("location: admin.php?ctrl=".$ctrl);
+        exit();
     break;
 }

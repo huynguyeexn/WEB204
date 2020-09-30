@@ -3,7 +3,7 @@
 session_start();
 include_once "models/user.php";
 include_once "models/order_items.php";
-include_once "models/games.php";
+include_once "models/game.php";
 include_once "models/order.php";
 $act = "index";
 $message = "";

@@ -2,8 +2,30 @@
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-                        <div class="row">
+                        <div class="row"> 
                             <div class="col-12">
+                        <?php
+                                if(isset($_SESSION['message'])){
+                                    switch($_SESSION['message'][0]){
+                                        case 0:
+                                        break;
+                                        case 1:
+                                            echo '<div class="sufee-alert alert with-close alert-success alert-dismissible fade show">
+                                            <span class="badge badge-pill badge-success">Success</span>
+                                            '.$_SESSION['message'][1].'
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>';
+                                        break;
+                                        case 2:
+                                        break;
+                                        case 3:
+                                        break;
+                                    }
+                                    session_destroy();
+                                }
+                            ?>
                                 <div class="table-data__tool">
                                     <div class="table-data__tool-left">
                                         <a href="admin.php?ctrl=<?php echo $ctrl?>" class="btn btn-danger" >
@@ -20,12 +42,11 @@
                                         <form action="index.php?ctrl=tag&act=insert" method="post" novalidate="novalidate">
                                             <div class="form-group">
                                               <label for="">Tag Name</label>
-                                              <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                              <input type="text" name="name" id="name" class="form-control" placeholder="" aria-describedby="helpId">
                                             </div>
                                             <div>
                                                 <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
                                                     <span id="payment-button-amount">Insert</span>
-                                                    <span id="payment-button-sending" style="display:none;">Sending…</span>
                                                 </button>
                                             </div>
                                         </form>

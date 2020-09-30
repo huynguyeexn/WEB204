@@ -29,7 +29,7 @@
         <nav class="top-navbar container row center-align">
             <div class="logo-box col-1 col-md-2  col-sm-1">
                 <a href="./index.html">
-                    <img class="lazy" src="./assets/img/logo.png" alt="">
+                    <img class="lazy" src="./assets/images/logo.png" alt="">
                 </a>
             </div>
             <div class="menu-box col-2 hidden-md">
@@ -124,7 +124,7 @@
                 <div class="row">
                     <div class="cataloge-game-images col-1">
                         <div class="responsive-image">
-                            <img src="./assets/img/arma.jpg" alt="">
+                            <img src="./assets/images/arma.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-2 cataloge-game-info">
@@ -157,7 +157,7 @@
                 <div class="row">
                     <div class="cataloge-game-images col-1">
                         <div class="responsive-image">
-                            <img src="./assets/img/arma.jpg" alt="">
+                            <img src="./assets/images/arma.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-2 cataloge-game-info">
@@ -190,7 +190,7 @@
                 <div class="row">
                     <div class="cataloge-game-images col-1">
                         <div class="responsive-image">
-                            <img src="./assets/img/arma.jpg" alt="">
+                            <img src="./assets/images/arma.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-2 cataloge-game-info">
@@ -223,7 +223,7 @@
                 <div class="row">
                     <div class="cataloge-game-images col-1">
                         <div class="responsive-image">
-                            <img src="./assets/img/arma.jpg" alt="">
+                            <img src="./assets/images/arma.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-2 cataloge-game-info">
@@ -256,7 +256,7 @@
                 <div class="row">
                     <div class="cataloge-game-images col-1">
                         <div class="responsive-image">
-                            <img src="./assets/img/arma.jpg" alt="">
+                            <img src="./assets/images/arma.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-2 cataloge-game-info">
@@ -316,7 +316,7 @@
                 </div>
                 <div class="footer-widget col-1 col-md-2 col-sm-2">
                     <div class="footer-logo">
-                        <img class="lazy" class="" src="./assets/img/logo.png" alt="">
+                        <img class="lazy" class="" src="./assets/images/logo.png" alt="">
                     </div>
                 </div>
             </div>
