@@ -4,7 +4,7 @@
 </div>
 
 <!-- Jquery JS-->
-<script src="assets/vendor/jquery-3.2.1.min.js"></script>
+<!-- <script src="assets/vendor/jquery-3.2.1.min.js"></script> -->
 <!-- Bootstrap JS-->
 <script src="assets/vendor/bootstrap-4.1/popper.min.js"></script>
 <script src="assets/vendor/bootstrap-4.1/bootstrap.min.js"></script>
@@ -23,6 +23,7 @@
 <script src="assets/vendor/chartjs/Chart.bundle.min.js"></script>
 <script src="assets/vendor/select2/select2.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <!-- Main JS-->
 <script src="assets/js/main.js"></script>
 

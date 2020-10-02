@@ -32,8 +32,4 @@ function execute($sql){
     return $id;
 }
 
-// function getLastInsertId(){
-//     $connect = getConnection();
-//     return $result;
-// }
 ?>

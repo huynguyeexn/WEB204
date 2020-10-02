@@ -31,7 +31,15 @@
     <link href="assets/vendor/slick/slick.css" rel="stylesheet" media="all">
     <link href="assets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="assets/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+
+    <!-- Dropzone-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     
+    <link href="assets/vendor/dropzone-5.7.0/dist/dropzone.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/dropzone-5.7.0/dist/basic.css" rel="stylesheet" media="all">
+    <script src="assets/vendor/dropzone-5.7.0/dist/dropzone.js"></script>
+
     <!-- Main CSS-->
     <link href="assets/css/theme.css" rel="stylesheet" media="all">
 

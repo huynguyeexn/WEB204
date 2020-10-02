@@ -50,14 +50,8 @@
                                 <?php
                                     foreach($games as $game){
 
-                                        $images = explode(',',str_replace('"','',str_replace(']','',str_replace('[','',$game["images"]))));
-                                        $tags = explode(',',str_replace('"','',str_replace(']','',str_replace('[','',$game["tag_id"]))));
-
-                                        foreach($tags as $tag){
-
-                                        }
-
-
+                                        $images = explode(',',str_replace('"','',str_replace(']','',str_replace('[','',$game["coverImages"]))));
+                                        $tags = getTagsByGameId($game['id']);
                                         echo '
                                         <tr>
                                             <td>
@@ -70,12 +64,12 @@
                                                     </button>
                                                 </div>
                                             </td>
-                                            <td><img src="assets/images/thumb/'.$game['id'].'/square/'.$images[0].'" alt="" class="game-thumbnail-sm"></td>
+                                            <td><img src="assets/images/thumb/'.$game['id'].'/'.$images[0].'" alt="" class="game-thumbnail-sm"></td>
                                             <td>'.$game['name'].'</td>
-                                            <td>'.$game['price'].'</td>
+                                            <td>'.$game['price'].' VNĐ</td>
                                             <td>';
                                             foreach($tags as $tag){
-                                                echo '<a href="" class="badge badge-primary mx-2">'.getTagById($tag)['name'].'</a>';
+                                                echo '<a href="admin.php?ctrl=game&tag_id='.$tag['tag_id'].'" class="badge badge-primary mx-1">'.getTagById($tag['tag_id'])['name'].'</a>';
                                             }
                                             echo '</td>
                                         </tr>';
@@ -103,7 +97,7 @@
 function deleteRow(name,id){
     swal({
         icon: "warning",
-        title: "Bạn có muốn xoá tài khoản \""+name+"\" không!",
+        title: "Bạn có muốn xoá \""+name+"\" không!",
         text: "Tác vụ này sẽ không thể hoàn tác",
         dangerMode: true,
         buttons: {
