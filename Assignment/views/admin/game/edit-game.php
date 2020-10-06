@@ -120,7 +120,7 @@
                                                 </div>
                                                 <div class="col-md-6 col-12">
                                                     <div class="form-group">
-                                                        <input type="text" value="[]" name="platforms_id"
+                                                        <input type="text" value=<?php echo $game_tag ?>  name="platforms_id"
                                                             id="platforms_id" hidden>
                                                         <div class="table-responsive table--no-card m-b-30">
                                                             <table

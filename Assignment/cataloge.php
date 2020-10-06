@@ -128,7 +128,7 @@
                         </div>
                     </div>
                     <div class="col-2 cataloge-game-info">
-                        <h2 class="game-title">Arma</h2>
+                        <a href=""><h2 class="game-title">Arma</h2></a>
                         <div class="rate">
                             <span>4.5</span>
                             <i class="fas fa-star    "></i>
@@ -138,7 +138,7 @@
                             <i class="fas fa-star-half    "></i>
                         </div>
                         <div class="game-tag">
-                            <span>Action</span><span>Action-adventure</span>
+                            <a><a><span>Action</span></a></a><a><span>Action-adventure</span></a>
                         </div>
                         <h3 class="destination">Destination</h3>
                         <p>
@@ -161,7 +161,7 @@
                         </div>
                     </div>
                     <div class="col-2 cataloge-game-info">
-                        <h2 class="game-title">Arma</h2>
+                        <a href=""><h2 class="game-title">Arma</h2></a>
                         <div class="rate">
                             <span>4.5</span>
                             <i class="fas fa-star    "></i>
@@ -171,7 +171,7 @@
                             <i class="fas fa-star-half    "></i>
                         </div>
                         <div class="game-tag">
-                            <span>Action</span><span>Action-adventure</span>
+                            <a><span>Action</span></a><a><span>Action-adventure</span></a>
                         </div>
                         <h3 class="destination">Destination</h3>
                         <p>
@@ -194,7 +194,7 @@
                         </div>
                     </div>
                     <div class="col-2 cataloge-game-info">
-                        <h2 class="game-title">Arma</h2>
+                        <a href=""><h2 class="game-title">Arma</h2></a>
                         <div class="rate">
                             <span>4.5</span>
                             <i class="fas fa-star    "></i>
@@ -204,7 +204,7 @@
                             <i class="fas fa-star-half    "></i>
                         </div>
                         <div class="game-tag">
-                            <span>Action</span><span>Action-adventure</span>
+                            <a><span>Action</span></a><a><span>Action-adventure</span></a>
                         </div>
                         <h3 class="destination">Destination</h3>
                         <p>
@@ -227,7 +227,7 @@
                         </div>
                     </div>
                     <div class="col-2 cataloge-game-info">
-                        <h2 class="game-title">Arma</h2>
+                        <a href=""><h2 class="game-title">Arma</h2></a>
                         <div class="rate">
                             <span>4.5</span>
                             <i class="fas fa-star    "></i>
@@ -237,7 +237,7 @@
                             <i class="fas fa-star-half    "></i>
                         </div>
                         <div class="game-tag">
-                            <span>Action</span><span>Action-adventure</span>
+                            <a><span>Action</span></a><a><span>Action-adventure</span></a>
                         </div>
                         <h3 class="destination">Destination</h3>
                         <p>
@@ -260,7 +260,7 @@
                         </div>
                     </div>
                     <div class="col-2 cataloge-game-info">
-                        <h2 class="game-title">Arma</h2>
+                        <a href=""><h2 class="game-title">Arma</h2></a>
                         <div class="rate">
                             <span>4.5</span>
                             <i class="fas fa-star    "></i>
@@ -270,7 +270,7 @@
                             <i class="fas fa-star-half    "></i>
                         </div>
                         <div class="game-tag">
-                            <span>Action</span><span>Action-adventure</span>
+                            <a><span>Action</span></a><a><span>Action-adventure</span></a>
                         </div>
                         <h3 class="destination">Destination</h3>
                         <p>

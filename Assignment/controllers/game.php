@@ -132,17 +132,17 @@ switch($act){
         foreach($files as $file){
             $coverGame = $coverGame . '"' . $file . '",';
         }
-        echo $coverGame = "[".rtrim($coverGame, ",")."]";
-        
-        
+        $coverGame = "[".rtrim($coverGame, ",")."]";
+
+
         $dir    = 'assets/images/game/'.$id;
         $files = array_diff(scandir($dir), array('.', '..'));
         foreach($files as $file){
             $inGame = $inGame . '"' . $file . '",';
         }
-        echo $inGame = "[".rtrim($inGame, ",")."]";
+        $inGame = "[".rtrim($inGame, ",")."]";
 
-        try{
+        // try{
             updateGame($id, $name,$price,$destination, $releaseDate, $inGame ,$coverGame , $publisher_id);
 
             deleteAllGameTags($id);
@@ -154,11 +154,11 @@ switch($act){
             foreach($platforms_id as $platform){
                 addNewGamePlatforms($id, $platform);
             }
-        }
-        catch(PDOException $Exception) {
-            echo 'Failed: ' . $Exception->getMessage();
-            exit;
-        }
+        // }
+        // catch(PDOException $Exception) {
+        //     echo 'Failed: ' . $Exception->getMessage();
+        //     exit;
+        // }
         $_SESSION['message'] = Array(1,"Success: Your task has successfully been completed.");
         header("location: admin.php?ctrl=".$ctrl."&act=edit&id=".$id);
         exit();

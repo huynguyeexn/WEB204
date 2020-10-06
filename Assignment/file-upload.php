@@ -22,7 +22,7 @@ if (isset($_GET['id'])) {
   // Upload file
   if ($request == 1) {
     $today = date("m.d.y");
-    $target_file = $target_dir . hash('md5', $today)."-".basename($_FILES['file']['name']);
+    $target_file = $target_dir.basename($_FILES['file']['name']);
     $msg = '';
 
     if (move_uploaded_file($_FILES['file']['tmp_name'], $target_file)) {
@@ -74,7 +74,7 @@ if (isset($_POST['request'])) {
 // Upload file
 if ($request == 1) {
 
-  $target_file = $target_dir . hash('md5', $today)."-".basename($_FILES['file']['name']);
+  $target_file = $target_dir.basename($_FILES['file']['name']);
   $msg = '';
 
   if (move_uploaded_file($_FILES['file']['tmp_name'], $target_file)) {
